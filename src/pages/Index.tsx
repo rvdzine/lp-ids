@@ -1,6 +1,8 @@
 import HeroSection from "@/components/landing/HeroSection";
 import UrgencyBanner from "@/components/landing/UrgencyBanner";
+import AIAdvantage from "@/components/landing/AIAdvantage";
 import TrustStats from "@/components/landing/TrustStats";
+import InstructorAuthority from "@/components/landing/InstructorAuthority";
 import ComparisonTable from "@/components/landing/ComparisonTable";
 import CourseModules from "@/components/landing/CourseModules";
 import CareerOutcomes from "@/components/landing/CareerOutcomes";
@@ -16,7 +18,9 @@ const Index = () => {
     <main>
       <HeroSection />
       <UrgencyBanner />
+      <AIAdvantage />
       <TrustStats />
+      <InstructorAuthority />
       <ComparisonTable />
       <CourseModules />
       <CareerOutcomes />
