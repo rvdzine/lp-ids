@@ -1,9 +1,9 @@
 const rows = [
   { feature: "Training Style", others: "Only Theory", ids: "Live Client Projects" },
-  { feature: "AI Tools", others: "No AI Tools", ids: "AI Marketing & Automation" },
-  { feature: "Mentorship", others: "No Mentorship", ids: "Industry Experts" },
-  { feature: "Placement Support", others: "No Placement Support", ids: "Dedicated Placement Team" },
-  { feature: "Post-Course Access", others: "Limited Support", ids: "Lifetime Resource Access" },
+  { feature: "AI Integration", others: "Not Included", ids: "AI-Driven Marketing" },
+  { feature: "Mentorship", others: "Limited", ids: "Industry Experts" },
+  { feature: "Placement", others: "Not Structured", ids: "Dedicated Placement Team" },
+  { feature: "Support", others: "Limited", ids: "Lifetime Resource Access" },
 ];
 
 const ComparisonTable = () => {

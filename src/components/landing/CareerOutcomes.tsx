@@ -14,7 +14,7 @@ const CareerOutcomes = () => {
           Career <span className="text-gradient">Opportunities</span> After the Course
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-muted-foreground">
-          Digital marketing opens doors to high-demand, well-paying careers
+          AI-Enabled Marketers Are in Higher Demand.
         </p>
 
         <div className="mx-auto grid max-w-4xl gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -35,7 +35,7 @@ const CareerOutcomes = () => {
             href="#hero"
             className="inline-flex items-center rounded-lg bg-cta-gradient px-8 py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-105 active:scale-95"
           >
-            Start My Digital Marketing Career →
+            Start My AI Marketing Career →
           </a>
         </div>
       </div>

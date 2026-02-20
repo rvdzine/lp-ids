@@ -2,28 +2,28 @@ import { useState } from "react";
 
 const faqs = [
   {
-    q: "Is this course suitable for beginners?",
-    a: "Absolutely! Our course is designed for complete beginners. No prior marketing or coding experience is required. We start from the basics and gradually move to advanced topics.",
+    q: "Is this course beginner friendly?",
+    a: "Absolutely! Our course is designed for complete beginners. No prior marketing or coding experience is required. We start from the basics and progressively introduce AI tools and advanced strategies.",
   },
   {
-    q: "What is the course duration?",
-    a: "The course duration is 3–6 months depending on the batch you choose. We offer both weekday and weekend batches to suit your schedule.",
+    q: "Do I need coding knowledge?",
+    a: "No coding required at all. We use no-code AI tools and platforms. Everything is taught with practical, hands-on exercises that anyone can follow.",
   },
   {
-    q: "Do you provide placement assistance?",
-    a: "Yes! We provide dedicated placement support including resume building, mock interviews, portfolio creation, and direct connections to 100+ hiring partners.",
+    q: "How is AI included in the training?",
+    a: "AI is integrated throughout the curriculum — from AI-powered content creation with ChatGPT, to automated campaign optimization, AI-based keyword research, and prompt engineering for marketing. You'll graduate as an AI-enabled marketer.",
   },
   {
-    q: "Can I learn while working a full-time job?",
-    a: "Yes, we offer flexible weekend and evening batches. Many of our successful students completed the course while working full-time.",
+    q: "Is placement guaranteed?",
+    a: "We provide dedicated placement assistance with 95% placement support rate. This includes resume building, LinkedIn optimization, mock interviews, portfolio creation, and direct connections to 100+ hiring partners.",
   },
   {
-    q: "What tools will I learn?",
-    a: "You'll master 15+ industry tools including Google Ads, Meta Ads, SEMrush, Ahrefs, Google Analytics, ChatGPT for marketing, Canva, WordPress, and more.",
+    q: "Can I learn while working full-time?",
+    a: "Yes! We offer flexible weekend and evening batches. Many of our successful students completed the course while working full-time jobs.",
   },
   {
-    q: "Is there any scholarship available?",
-    a: "Yes, we offer early bird scholarships for students who enroll before the batch starts. Contact our counselors for current scholarship offers.",
+    q: "Is scholarship available?",
+    a: "Yes, we offer early bird scholarships for students who enroll before the batch starts. Contact our counselors for current scholarship offers and payment plans.",
   },
 ];
 

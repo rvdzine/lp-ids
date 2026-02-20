@@ -1,8 +1,8 @@
 const tools = [
-  "Google Ads", "Meta Ads", "Google Analytics",
-  "SEMrush", "Ahrefs", "Canva",
-  "ChatGPT", "WordPress", "Mailchimp",
-  "HubSpot", "Hootsuite", "Google Tag Manager",
+  "ChatGPT", "Google Ads", "Meta Ads",
+  "Canva", "Google Analytics", "Tag Manager",
+  "WordPress", "Shopify", "HubSpot",
+  "Pabbly", "Mailchimp", "Automation Tools",
 ];
 
 const ToolsGrid = () => {
@@ -10,10 +10,10 @@ const ToolsGrid = () => {
     <section className="bg-section-alt py-16" id="tools">
       <div className="container">
         <h2 className="mb-4 text-center font-display text-3xl font-extrabold text-foreground md:text-4xl">
-          Tools You'll <span className="text-gradient">Master</span>
+          AI + Industry Tools You'll <span className="text-gradient">Master</span>
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-muted-foreground">
-          Industry-standard tools used by top digital marketers worldwide
+          20+ tools used by top AI-powered digital marketers worldwide
         </p>
 
         <div className="mx-auto grid max-w-3xl grid-cols-3 gap-3 md:grid-cols-4 lg:grid-cols-6">

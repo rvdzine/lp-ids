@@ -3,10 +3,11 @@ const CTABanner = () => {
     <section className="bg-hero py-16">
       <div className="container text-center">
         <h2 className="mb-4 font-display text-3xl font-extrabold text-hero-foreground md:text-4xl">
-          Ready to Start Your <span className="text-gradient">Digital Marketing</span> Career?
+          Ready to Become a Future-Ready{" "}
+          <span className="text-gradient">AI Digital Marketer</span>?
         </h2>
         <p className="mx-auto mb-8 max-w-lg text-hero-foreground/70">
-          Join 2000+ successful students. Limited seats available for the next batch.
+          Seats Filling Fast for the Upcoming Batch. Join 2000+ successful students.
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a

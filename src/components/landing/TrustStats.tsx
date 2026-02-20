@@ -10,9 +10,12 @@ const TrustStats = () => {
   return (
     <section className="bg-trust py-16" id="trust">
       <div className="container">
-        <h2 className="mb-12 text-center font-display text-3xl font-extrabold text-trust-foreground md:text-4xl">
-          Trusted by <span className="text-gradient">Thousands</span> of Students
+        <h2 className="mb-4 text-center font-display text-3xl font-extrabold text-trust-foreground md:text-4xl">
+          Trusted by <span className="text-gradient">Students Across India</span>
         </h2>
+        <p className="mx-auto mb-12 max-w-xl text-center text-trust-foreground/60">
+          Numbers that speak for themselves
+        </p>
         <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-6">
           {stats.map((s) => (
             <div
