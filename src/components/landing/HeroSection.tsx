@@ -24,17 +24,21 @@ const HeroSection = () => {
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cta/30 bg-cta/10 px-4 py-1.5 text-sm font-medium text-cta">
               <span className="h-2 w-2 animate-pulse-slow rounded-full bg-cta" />
-              🔥 AI-Integrated Curriculum · 2026 Updated
+              🔥 India's AI-First Digital Marketing Institute | 2026 Updated Curriculum
             </div>
 
-            <h1 className="mb-6 font-display text-4xl font-extrabold leading-tight tracking-tight text-hero-foreground md:text-5xl lg:text-[3.5rem]">
-              Become a Future-Ready{" "}
-              <span className="text-gradient">AI Digital Marketer</span>{" "}
+            <h1 className="mb-4 font-display text-4xl font-extrabold leading-tight tracking-tight text-hero-foreground md:text-5xl lg:text-[3.5rem]">
+              Launch Your Career as an{" "}
+              <span className="text-gradient">AI-Powered Digital Marketer</span>{" "}
               in 3–6 Months
             </h1>
 
-            <p className="mb-8 max-w-lg text-lg leading-relaxed text-hero-foreground/80">
-              Master AI-Powered SEO, Google Ads, Meta Ads & Automation with Live Client Projects + Placement Assistance
+            <p className="mb-3 max-w-lg text-lg leading-relaxed text-hero-foreground/80">
+              Master AI-Driven SEO, Google Ads, Meta Ads & Automation with Live Client Projects + Placement Assistance
+            </p>
+
+            <p className="mb-8 inline-block rounded-md bg-cta/15 px-3 py-1.5 text-sm font-semibold text-cta">
+              ⚡ AI is changing hiring. Companies now prefer AI-enabled marketers.
             </p>
 
             <ul className="mb-8 space-y-3">

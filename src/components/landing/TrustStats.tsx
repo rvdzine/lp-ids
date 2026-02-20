@@ -3,7 +3,6 @@ const stats = [
   { value: "500+", label: "Students Placed", icon: "💼" },
   { value: "95%", label: "Placement Assistance", icon: "📈" },
   { value: "100+", label: "Hiring Partners", icon: "🤝" },
-  { value: "₹3–6 LPA", label: "Avg. Salary Range", icon: "💰" },
 ];
 
 const TrustStats = () => {
@@ -16,7 +15,7 @@ const TrustStats = () => {
         <p className="mx-auto mb-12 max-w-xl text-center text-trust-foreground/60">
           Numbers that speak for themselves
         </p>
-        <div className="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-5 lg:gap-6">
+        <div className="grid grid-cols-2 gap-4 md:grid-cols-4 lg:gap-6">
           {stats.map((s) => (
             <div
               key={s.label}
@@ -27,6 +26,13 @@ const TrustStats = () => {
               <div className="mt-1 text-sm text-trust-foreground/70">{s.label}</div>
             </div>
           ))}
+        </div>
+
+        {/* Salary highlight */}
+        <div className="mx-auto mt-8 max-w-md rounded-2xl border-2 border-cta/40 bg-cta/10 p-6 text-center backdrop-blur-sm">
+          <div className="mb-1 text-3xl">💰</div>
+          <div className="font-display text-3xl font-extrabold text-cta md:text-4xl">₹3–6 LPA</div>
+          <div className="mt-2 text-sm font-medium text-trust-foreground/80">Average Salary Range for Our Graduates</div>
         </div>
       </div>
     </section>

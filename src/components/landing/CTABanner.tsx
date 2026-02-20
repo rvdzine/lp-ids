@@ -7,7 +7,7 @@ const CTABanner = () => {
           <span className="text-gradient">AI Digital Marketer</span>?
         </h2>
         <p className="mx-auto mb-8 max-w-lg text-hero-foreground/70">
-          Seats Filling Fast for the Upcoming Batch. Join 2000+ successful students.
+          Seats Filling Fast – Secure Your Spot Today
         </p>
         <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
           <a
