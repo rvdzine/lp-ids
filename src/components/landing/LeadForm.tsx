@@ -12,7 +12,6 @@ const LeadForm = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Track form submission
     if (typeof window !== "undefined" && (window as any).dataLayer) {
       (window as any).dataLayer.push({ event: "lead_form_submit", ...formData });
     }
@@ -35,9 +34,15 @@ const LeadForm = () => {
 
   return (
     <form onSubmit={handleSubmit} className="rounded-xl bg-card p-6 shadow-lg md:p-8">
-      <div className="mb-6 text-center">
+      <div className="mb-4 text-center">
         <h3 className="font-display text-xl font-bold text-foreground">Book Free Career Counseling</h3>
         <p className="mt-1 text-sm text-muted-foreground">Get personalized guidance from our experts</p>
+      </div>
+
+      {/* Scarcity badge */}
+      <div className="mb-5 flex items-center justify-center gap-2 rounded-lg bg-urgency/10 px-3 py-2 text-sm font-semibold text-urgency">
+        <span className="h-2 w-2 animate-pulse-slow rounded-full bg-urgency" />
+        ⚠ Only 27 Seats Left for Upcoming Batch
       </div>
 
       <div className="space-y-4">

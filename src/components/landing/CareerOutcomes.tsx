@@ -11,7 +11,7 @@ const CareerOutcomes = () => {
     <section className="py-16" id="careers">
       <div className="container">
         <h2 className="mb-4 text-center font-display text-3xl font-extrabold text-foreground md:text-4xl">
-          Career <span className="text-gradient">Opportunities</span> After the Course
+          High-Income Career <span className="text-gradient">Opportunities</span> After the Course
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-muted-foreground">
           AI-Enabled Marketers Are in Higher Demand.
