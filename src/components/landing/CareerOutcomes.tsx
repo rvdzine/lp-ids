@@ -1,9 +1,10 @@
 const careers = [
-  { role: "Digital Marketing Executive", salary: "₹2.5–4 LPA", icon: "📱" },
-  { role: "SEO Specialist", salary: "₹3–6 LPA", icon: "🔍" },
-  { role: "PPC Expert", salary: "₹4–8 LPA", icon: "📊" },
-  { role: "Social Media Manager", salary: "₹3–7 LPA", icon: "📣" },
-  { role: "Freelancer", salary: "₹30K–₹1.5L/month", icon: "💻" },
+  { role: "Digital Marketing Executive", salary: "₹3–5 LPA", icon: "📱" },
+  { role: "SEO Specialist", salary: "₹4–8 LPA", icon: "🔍" },
+  { role: "Performance Marketing Expert", salary: "₹6–15 LPA", icon: "📊" },
+  { role: "Social Media Manager", salary: "₹4–10 LPA", icon: "📣" },
+  { role: "Growth Marketer", salary: "₹12–25 LPA", icon: "🚀" },
+  { role: "Freelancer / Consultant", salary: "₹30K–₹2L+/month", icon: "💻" },
 ];
 
 const CareerOutcomes = () => {
