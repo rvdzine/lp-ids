@@ -102,7 +102,7 @@ const HeroSection = () => {
       </div>
 
       {/* Mobile Form */}
-      <div className="container pb-12 lg:hidden">
+      <div className="container pb-6 lg:hidden">
         <LeadForm />
       </div>
     </section>
