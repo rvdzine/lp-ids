@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { supabase } from "@/integrations/supabase/client";
 
 const LeadForm = () => {
   const [formData, setFormData] = useState({
@@ -9,13 +10,43 @@ const LeadForm = () => {
     mode: "",
   });
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (typeof window !== "undefined" && (window as any).dataLayer) {
-      (window as any).dataLayer.push({ event: "lead_form_submit", ...formData });
+    setLoading(true);
+
+    try {
+      // Save lead to database
+      const { error } = await supabase.from("leads").insert({
+        name: formData.name,
+        email: formData.email,
+        phone: formData.phone,
+        city: formData.city,
+        mode: formData.mode,
+      });
+
+      if (error) {
+        console.error("Error saving lead:", error);
+      }
+
+      // Send confirmation email
+      await supabase.functions.invoke("send-confirmation-email", {
+        body: formData,
+      });
+
+      // GTM tracking
+      if (typeof window !== "undefined" && (window as any).dataLayer) {
+        (window as any).dataLayer.push({ event: "lead_form_submit", ...formData });
+      }
+
+      setSubmitted(true);
+    } catch (err) {
+      console.error("Submission error:", err);
+      setSubmitted(true); // Still show success to user
+    } finally {
+      setLoading(false);
     }
-    setSubmitted(true);
   };
 
   if (submitted) {
@@ -97,9 +128,10 @@ const LeadForm = () => {
 
       <button
         type="submit"
-        className="mt-6 w-full rounded-lg bg-cta-gradient py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[0.98]"
+        disabled={loading}
+        className="mt-6 w-full rounded-lg bg-cta-gradient py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-60 disabled:hover:scale-100"
       >
-        Book Free Career Counseling →
+        {loading ? "Submitting..." : "Book Free Career Counseling →"}
       </button>
 
       <p className="mt-3 text-center text-xs text-muted-foreground">

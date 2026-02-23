@@ -63,7 +63,7 @@ const HeroSection = () => {
                 Book Free Career Counseling →
               </a>
               <a
-                href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20course%20details"
+                href="https://wa.me/919315471293?text=Hi%2C%20I%20want%20course%20details"
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => {
