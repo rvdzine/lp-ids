@@ -64,7 +64,7 @@ const LeadForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-xl bg-card p-6 shadow-lg md:p-8">
+    <form onSubmit={handleSubmit} className="relative z-20 rounded-xl bg-card p-6 shadow-lg md:p-8">
       <div className="mb-4 text-center">
         <h3 className="font-display text-xl font-bold text-foreground">Book Free Career Counseling</h3>
         <p className="mt-1 text-sm text-muted-foreground">Get personalized guidance from our experts</p>
@@ -82,7 +82,7 @@ const LeadForm = () => {
           placeholder="Full Name"
           required
           maxLength={100}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
+          className="relative z-30 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
           value={formData.name}
           onChange={(e) => setFormData({ ...formData, name: e.target.value })}
         />
@@ -91,7 +91,7 @@ const LeadForm = () => {
           placeholder="Email Address"
           required
           maxLength={255}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
+          className="relative z-30 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
           value={formData.email}
           onChange={(e) => setFormData({ ...formData, email: e.target.value })}
         />
@@ -101,7 +101,7 @@ const LeadForm = () => {
           required
           maxLength={15}
           pattern="[0-9+\-\s]{7,15}"
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
+          className="relative z-30 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
           value={formData.phone}
           onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
         />
@@ -110,26 +110,16 @@ const LeadForm = () => {
           placeholder="City"
           required
           maxLength={50}
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
+          className="relative z-30 w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
           value={formData.city}
           onChange={(e) => setFormData({ ...formData, city: e.target.value })}
         />
-        <select
-          required
-          className="w-full rounded-lg border border-border bg-background px-4 py-3 text-sm text-foreground outline-none transition-all focus:border-cta focus:ring-2 focus:ring-cta/20"
-          value={formData.mode}
-          onChange={(e) => setFormData({ ...formData, mode: e.target.value })}
-        >
-          <option value="">Select Mode</option>
-          <option value="online">Online</option>
-          <option value="offline">Offline (Classroom)</option>
-        </select>
       </div>
 
       <button
         type="submit"
         disabled={loading}
-        className="mt-6 w-full rounded-lg bg-cta-gradient py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-60 disabled:hover:scale-100"
+        className="relative z-30 mt-6 w-full rounded-lg bg-cta-gradient py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-[1.02] hover:shadow-lg active:scale-[0.98] disabled:opacity-60 disabled:hover:scale-100"
       >
         {loading ? "Submitting..." : "Book Free Career Counseling →"}
       </button>

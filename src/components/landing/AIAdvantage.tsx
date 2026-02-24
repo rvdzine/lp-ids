@@ -64,6 +64,16 @@ const AIAdvantage = () => {
         <div className="mt-10 text-center">
           <a
             href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              const heroSection = document.getElementById("hero");
+              if (heroSection) {
+                heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                setTimeout(() => {
+                  document.querySelector<HTMLInputElement>('form input[type="text"]')?.focus();
+                }, 800);
+              }
+            }}
             className="inline-flex items-center rounded-lg bg-cta-gradient px-8 py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-105 active:scale-95"
           >
             See How AI Changes Marketing →

@@ -51,7 +51,7 @@ const InstructorAuthority = () => {
               <p className="mb-3 text-sm leading-relaxed text-muted-foreground">{m.bio}</p>
               <div className="space-y-2 border-t border-border pt-3">
                 <p className="text-xs text-muted-foreground">
-                  <span className="font-semibold text-foreground">Companies:</span> {m.companies}
+                  {/* <span className="font-semibold text-foreground">Companies:</span> {m.companies} */}
                 </p>
                 <p className="text-xs text-muted-foreground">
                   <span className="font-semibold text-foreground">Certifications:</span> {m.certifications}

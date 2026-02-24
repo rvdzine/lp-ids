@@ -17,24 +17,26 @@ import WhatsAppButton from "@/components/landing/WhatsAppButton";
 
 const Index = () => {
   return (
-    <main>
-      <HeroSection />
+    <>
+      <main className="pb-24 md:pb-28">
+        <HeroSection />
+        <AIAdvantage />
+        <SkillGapWarning />
+        <TrustStats />
+        <InstructorAuthority />
+        <CaseStudy />
+        <ComparisonTable />
+        <CourseModules />
+        <CareerOutcomes />
+        <ToolsGrid />
+        <Testimonials />
+        <FAQSection />
+        <CTABanner />
+        <Footer />
+        <WhatsAppButton />
+      </main>
       <UrgencyBanner />
-      <AIAdvantage />
-      <SkillGapWarning />
-      <TrustStats />
-      <InstructorAuthority />
-      <CaseStudy />
-      <ComparisonTable />
-      <CourseModules />
-      <CareerOutcomes />
-      <ToolsGrid />
-      <Testimonials />
-      <FAQSection />
-      <CTABanner />
-      <Footer />
-      <WhatsAppButton />
-    </main>
+    </>
   );
 };
 

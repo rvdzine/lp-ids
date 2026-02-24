@@ -1,26 +1,50 @@
 const testimonials = [
   {
-    name: "Priya Sharma",
-    role: "SEO Specialist at WebTech Solutions",
-    salary: "₹4.5 LPA",
-    text: "IDS transformed my career completely. The AI tools training gave me an edge no other institute could. From zero knowledge to landing a job in just 4 months.",
+    name: "Isha Verma",
+    role: "Digital Marketing Specialist at Nykaa",
+    salary: "₹12 LPA",
+    text: "Real projects prepared me to run high-performing campaigns at Nykaa",
     before: "College Graduate",
-    after: "SEO Specialist",
+    after: "DM Specialist",
   },
   {
-    name: "Rahul Verma",
-    role: "PPC Manager at Digital First Agency",
-    salary: "₹6 LPA",
-    text: "The AI-powered campaign optimization techniques I learned at IDS helped me outperform experienced marketers. Got 3 offers within a month.",
-    before: "Retail Associate",
+    name: "Bhoomi gupta",
+    role: "Marketing Automation Specialist at Razorpay",
+    salary: "₹9.2 LPA",
+    text: "Automation skills here helped me power campaigns at Razorpay.",
+    before: "Marketing Specialist",
     after: "PPC Manager",
   },
   {
-    name: "Ananya Gupta",
-    role: "Freelance AI Digital Marketer",
-    salary: "₹80K/month",
-    text: "I started freelancing during the course itself using AI tools. Now I handle 5 clients independently. The prompt engineering module was a game-changer.",
-    before: "Homemaker",
+    name: "Arjun yadav",
+    role: "Growth Marketing Manager at Razorpay",
+    salary: "₹9.2 LPA",
+    text: "Growth hacking, CRO & analytics helped me crack Razorpay — this program was a game changer!",
+    before: "Marketing Manager",
+    after: "Freelancer earning ₹80K/mo",
+  },
+  {
+    name: "Divya Chaudhary",
+    role: "Digital Marketing Specialist at Nykaa",
+    salary: "₹12 LPA",
+    text: "Real projects prepared me to run high-performing campaigns at Nykaa",
+    before: "College Graduate",
+    after: "DM Specialist",
+  },
+  {
+    name: "Loveleen Sharma",
+    role: "Marketing Automation Specialist at Razorpay",
+    salary: "₹9.2 LPA",
+    text: "Automation skills here helped me power campaigns at Razorpay.",
+    before: "Marketing Specialist",
+    after: "PPC Manager",
+  },
+  {
+    name: "Daryl Fernandes",
+    role: "Growth Marketing Manager at Razorpay",
+    salary: "₹9.2 LPA",
+    text: "Growth hacking, CRO & analytics helped me crack Razorpay — this program was a game changer!",
+    before: "Marketing Manager",
     after: "Freelancer earning ₹80K/mo",
   },
 ];
@@ -66,6 +90,24 @@ const Testimonials = () => {
           ))}
         </div>
       </div>
+      <div className="flex justify-center mt-10">
+          <a
+            href="#hero"
+            onClick={(e) => {
+              e.preventDefault();
+              const heroSection = document.getElementById("hero");
+              if (heroSection) {
+                heroSection.scrollIntoView({ behavior: "smooth", block: "start" });
+                setTimeout(() => {
+                  document.querySelector<HTMLInputElement>('form input[type="text"]')?.focus();
+                }, 800);
+              }
+            }}
+            className="bg-orange-500 px-8 py-3 rounded-lg text-white text-lg font-semibold transition-all duration-300 hover:scale-105 hover:shadow-lg focus:ring-2 focus:ring-[#EA2525]/50"
+          >
+            Book Free Career Counseling →
+          </a>
+        </div>
     </section>
   );
 };

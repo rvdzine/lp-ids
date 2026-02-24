@@ -1,5 +1,5 @@
 const Footer = () => (
-  <footer className="border-t border-border bg-primary py-8">
+  <footer className="border-t border-border bg-primary py-8 relative z-30 mb-24 md:mb-28">
     <div className="container text-center">
       <p className="font-display text-lg font-bold text-primary-foreground">
         Institute of Digital Studies (IDS)

@@ -1,8 +1,8 @@
 const stats = [
-  { value: "2000+", label: "Students Trained", icon: "🎓" },
-  { value: "500+", label: "Students Placed", icon: "💼" },
+  { value: "3500+", label: "Students Trained", icon: "🎓" },
+  { value: "2000+", label: "Students Placed", icon: "💼" },
   { value: "95%", label: "Placement Assistance", icon: "📈" },
-  { value: "100+", label: "Hiring Partners", icon: "🤝" },
+  { value: "300+", label: "Hiring Partners", icon: "🤝" },
 ];
 
 const TrustStats = () => {
@@ -31,7 +31,7 @@ const TrustStats = () => {
         {/* Salary highlight */}
         <div className="mx-auto mt-8 max-w-md rounded-2xl border-2 border-cta/40 bg-cta/10 p-6 text-center backdrop-blur-sm">
           <div className="mb-1 text-3xl">💰</div>
-          <div className="font-display text-3xl font-extrabold text-cta md:text-4xl">₹3–6 LPA</div>
+          <div className="font-display text-3xl font-extrabold text-cta md:text-4xl">₹3–9 LPA</div>
           <div className="mt-2 text-sm font-medium text-trust-foreground/80">Average Salary Range for Our Graduates</div>
         </div>
       </div>
