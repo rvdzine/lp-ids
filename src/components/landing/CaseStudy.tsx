@@ -4,7 +4,7 @@ const CaseStudy = () => {
       <div className="container max-w-4xl">
         <h2 className="mb-4 text-center font-display text-3xl font-extrabold text-foreground md:text-4xl">
           From Beginner to{" "}
-          <span className="text-gradient">₹4.5 LPA</span> – Real Student Transformation
+          <span className="text-gradient">₹7.5 LPA</span> – Real Student Transformation
         </h2>
         <p className="mx-auto mb-10 max-w-xl text-center text-muted-foreground">
           Real Skills. Real Results.
@@ -39,7 +39,7 @@ const CaseStudy = () => {
               <h3 className="mb-1 font-display text-lg font-bold text-foreground">Arjun Singh</h3>
               <p className="mb-3 text-sm text-muted-foreground">Digital Marketing Executive at WebScale Digital</p>
               <div className="rounded-lg bg-cta-green/5 p-4">
-                <p className="text-2xl font-extrabold text-cta-green">₹4.5 LPA</p>
+                <p className="text-2xl font-extrabold text-cta-green">₹7.5 LPA</p>
                 <p className="mt-1 text-xs text-muted-foreground">Placed in just 4 months after enrollment.</p>
               </div>
             </div>

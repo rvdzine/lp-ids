@@ -11,9 +11,11 @@ import CareerOutcomes from "@/components/landing/CareerOutcomes";
 import ToolsGrid from "@/components/landing/ToolsGrid";
 import Testimonials from "@/components/landing/Testimonials";
 import FAQSection from "@/components/landing/FAQSection";
+import ReelsSection from "@/components/ReelsSection";
 import CTABanner from "@/components/landing/CTABanner";
 import Footer from "@/components/landing/Footer";
 import WhatsAppButton from "@/components/landing/WhatsAppButton";
+import CertificationSection from "@/components/CertificationSection";
 
 const Index = () => {
   return (
@@ -30,6 +32,8 @@ const Index = () => {
         <CareerOutcomes />
         <ToolsGrid />
         <Testimonials />
+        <ReelsSection />
+        <CertificationSection />
         <FAQSection />
         <CTABanner />
         <Footer />

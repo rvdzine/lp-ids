@@ -2,11 +2,11 @@ import heroBg from "@/assets/hero-bg.jpg";
 import LeadForm from "./LeadForm";
 
 const benefits = [
-  "Beginner Friendly – No Coding Required",
-  "AI-Infused Live Client Projects",
-  "20+ Industry & AI Tools",
-  "Resume + LinkedIn Optimization",
-  "Dedicated Placement Support",
+  "3500+ Students",
+  "95% Placement Assistance",
+  "Average Package ₹6-20 LPA",
+  "2026 Updated Curriculum",
+  "30+ AI Tools",
 ];
 
 const HeroSection = () => {
@@ -28,9 +28,9 @@ const HeroSection = () => {
             </div>
 
             <h1 className="mb-4 font-display text-4xl font-extrabold leading-tight tracking-tight text-hero-foreground md:text-5xl lg:text-[3.5rem]">
-              Launch Your Career as an{" "}
-              <span className="text-gradient">AI-Powered Digital Marketer</span>{" "}
-              in 20 weeks
+              Get Job-Ready AI Digital Marketing Skills in {" "}
+              <span className="text-gradient">20 weeks and Unlock ₹ 5-20 LPA </span>{" "}
+              Career Opportunities
             </h1>
 
             <p className="mb-3 max-w-lg text-lg leading-relaxed text-hero-foreground/80">
