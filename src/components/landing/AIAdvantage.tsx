@@ -123,6 +123,34 @@ const AIAdvantage = () => {
                 <span className="text-sm text-muted-foreground"> – video generation model from google</span>
               </div>
             </div>
+            <div className="flex items-start gap-3 rounded-lg bg-card/50 p-4 backdrop-blur-sm transition-all hover:bg-card/80">
+              <span className="text-cta-green">✔</span>
+              <div>
+                <span className="font-semibold text-foreground">Claude AI</span>
+                <span className="text-sm text-muted-foreground"> – advanced reasoning and content creation</span>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg bg-card/50 p-4 backdrop-blur-sm transition-all hover:bg-card/80">
+              <span className="text-cta-green">✔</span>
+              <div>
+                <span className="font-semibold text-foreground">ChatGPT</span>
+                <span className="text-sm text-muted-foreground"> – conversational AI for content & strategy</span>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg bg-card/50 p-4 backdrop-blur-sm transition-all hover:bg-card/80">
+              <span className="text-cta-green">✔</span>
+              <div>
+                <span className="font-semibold text-foreground">DeepSeek</span>
+                <span className="text-sm text-muted-foreground"> – AI-powered code and problem solving</span>
+              </div>
+            </div>
+            <div className="flex items-start gap-3 rounded-lg bg-card/50 p-4 backdrop-blur-sm transition-all hover:bg-card/80">
+              <span className="text-cta-green">✔</span>
+              <div>
+                <span className="font-semibold text-foreground">Gemini</span>
+                <span className="text-sm text-muted-foreground"> – Google's multimodal AI assistant</span>
+              </div>
+            </div>
           </div>
         </div>
 

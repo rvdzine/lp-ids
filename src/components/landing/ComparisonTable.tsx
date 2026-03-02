@@ -8,33 +8,63 @@ const rows = [
 
 const ComparisonTable = () => {
   return (
-    <section className="bg-section-alt py-16" id="compare">
-      <div className="container max-w-4xl">
-        <h2 className="mb-4 text-center font-display text-3xl font-extrabold text-foreground md:text-4xl">
+    <section className="bg-section-alt py-12 md:py-16" id="compare">
+      <div className="container max-w-4xl px-4">
+        <h2 className="mb-3 md:mb-4 text-center font-display text-2xl sm:text-3xl font-extrabold text-foreground md:text-4xl">
           Why IDS is <span className="text-gradient">Different</span>
         </h2>
-        <p className="mx-auto mb-10 max-w-xl text-center text-muted-foreground">
+        <p className="mx-auto mb-8 md:mb-10 max-w-xl text-center text-sm sm:text-base text-muted-foreground px-4">
           See how we stack up against other institutes
         </p>
 
-        <div className="overflow-x-auto">
+        {/* Mobile View - Card Layout */}
+        <div className="block md:hidden space-y-4">
+          {rows.map((row, i) => (
+            <div key={row.feature} className="rounded-xl border border-border bg-card shadow-md overflow-hidden">
+              <div className="bg-primary text-primary-foreground p-3 font-semibold text-sm">
+                {row.feature}
+              </div>
+              <div className="p-4 space-y-3">
+                <div className="flex items-center justify-between">
+                  <span className="text-xs text-muted-foreground font-medium">Others</span>
+                  <span className="flex items-center gap-2 text-sm text-muted-foreground">
+                    <span className="text-urgency text-base">✗</span>
+                    <span>{row.others}</span>
+                  </span>
+                </div>
+                <div className="flex items-center justify-between bg-cta/5 -mx-4 px-4 py-2 rounded">
+                  <span className="text-xs text-foreground font-semibold">IDS ⭐</span>
+                  <span className="flex items-center gap-2 text-sm text-foreground font-semibold">
+                    <span className="text-cta-green text-base">✔</span>
+                    <span>{row.ids}</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Tablet & Desktop View - Table Layout */}
+        <div className="hidden md:block overflow-x-auto">
           <div className="min-w-[600px] overflow-hidden rounded-xl border border-border shadow-lg">
             <div className="grid grid-cols-3 bg-primary text-primary-foreground">
-              <div className="p-3 text-xs font-semibold md:p-4 md:text-sm">Feature</div>
-              <div className="p-3 text-center text-xs font-semibold opacity-60 md:p-4 md:text-sm">Others</div>
-              <div className="bg-cta p-3 text-center text-xs font-bold text-cta-foreground md:p-4 md:text-sm">IDS ⭐</div>
+              <div className="p-3 text-xs font-semibold md:p-4 md:text-sm lg:text-base">Feature</div>
+              <div className="p-3 text-center text-xs font-semibold opacity-60 md:p-4 md:text-sm lg:text-base">Others</div>
+              <div className="bg-cta p-3 text-center text-xs font-bold text-cta-foreground md:p-4 md:text-sm lg:text-base">IDS ⭐</div>
             </div>
             {rows.map((row, i) => (
               <div key={row.feature} className={`grid grid-cols-3 ${i % 2 === 0 ? "bg-card" : "bg-muted/50"}`}>
-                <div className="p-3 text-xs font-medium text-foreground md:p-4 md:text-sm">{row.feature}</div>
-                <div className="flex items-center justify-center p-3 text-center text-xs text-muted-foreground md:p-4 md:text-sm">
-                  <span className="flex items-center gap-1">
-                    <span className="text-urgency">✗</span> <span className="hidden sm:inline">{row.others}</span>
+                <div className="p-3 text-xs font-medium text-foreground md:p-4 md:text-sm lg:text-base">{row.feature}</div>
+                <div className="flex items-center justify-center p-3 text-center text-xs text-muted-foreground md:p-4 md:text-sm lg:text-base">
+                  <span className="flex items-center gap-1.5">
+                    <span className="text-urgency">✗</span>
+                    <span>{row.others}</span>
                   </span>
                 </div>
-                <div className="flex items-center justify-center bg-cta/5 p-3 text-center text-xs font-semibold text-foreground md:p-4 md:text-sm">
-                  <span className="flex items-center gap-1">
-                    <span className="text-cta-green">✔</span> <span className="hidden sm:inline">{row.ids}</span>
+                <div className="flex items-center justify-center bg-cta/5 p-3 text-center text-xs font-semibold text-foreground md:p-4 md:text-sm lg:text-base">
+                  <span className="flex items-center gap-1.5">
+                    <span className="text-cta-green">✔</span>
+                    <span>{row.ids}</span>
                   </span>
                 </div>
               </div>
