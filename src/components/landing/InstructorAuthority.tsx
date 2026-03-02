@@ -1,21 +1,21 @@
 const mentors = [
   {
-    name: "Rajesh Kumar",
-    experience: "12+ Years",
+    name: "Suleman Khan",
+    experience: "9+ Years",
     companies: "Google, HubSpot, Razorpay",
     certifications: "Google Ads Certified, Meta Blueprint",
     bio: "Led performance marketing teams scaling campaigns from ₹1L to ₹1Cr+ monthly ad spend.",
   },
   {
-    name: "Sneha Patel",
+    name: "Deepanshi Kukreja",
     experience: "8+ Years",
     companies: "Amazon, Flipkart, Zomato",
     certifications: "SEMrush Certified, Google Analytics",
     bio: "Built organic traffic strategies driving 10M+ monthly visitors for top e-commerce brands.",
   },
   {
-    name: "Amit Sharma",
-    experience: "10+ Years",
+    name: "Mayank Bansal",
+    experience: "7+ Years",
     companies: "Dentsu, Ogilvy, WPP",
     certifications: "Facebook Certified, HubSpot Inbound",
     bio: "Award-winning social media strategist specializing in AI-driven content and automation.",
