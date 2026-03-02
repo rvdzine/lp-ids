@@ -1,12 +1,17 @@
 const modules = [
-  { title: "SEO (with AI Tools)", desc: "On-page, off-page, technical SEO powered by AI research", icon: "🔍" },
-  { title: "Google Ads (AI Optimization)", desc: "Smart bidding, automated campaigns & AI ad copy", icon: "📊" },
-  { title: "Meta Ads Automation", desc: "AI-driven targeting, creative testing & scaling", icon: "📱" },
-  { title: "AI Content Systems", desc: "Prompt engineering, ChatGPT workflows & content at scale", icon: "🤖" },
-  { title: "Email Automation", desc: "Drip campaigns, AI personalization & funnels", icon: "📧" },
-  { title: "Analytics & Reporting", desc: "Google Analytics, automated dashboards & insights", icon: "📈" },
-  { title: "No-Code Funnel Building", desc: "Landing pages, lead funnels & conversion optimization", icon: "🚀" },
-  { title: "Prompt Engineering for Marketing", desc: "Master AI prompts for ads, content & strategy", icon: "✨" },
+  { title: "Digital Marketing Foundations", desc: "Introduction to digital marketing, customer journey, marketing channels, and industry tools.", icon: "🔍" },
+  { title: "SEO & Google Ranking (with AI Tools)", desc: "Keyword research, on-page SEO, off-page SEO, technical SEO, and Google My Business (GMB) optimization.", icon: "📊" },
+  { title: "Facebook & Instagram Ads", desc: "Campaign setup, targeting strategies, retargeting, ad creatives, and scaling Meta ad campaigns.", icon: "📱" },
+  { title: "Google Ads Mastery", desc: "Search ads, display ads, smart bidding, AI ad copy, and conversion optimization.", icon: "🤖" },
+  { title: "YouTube Marketing & Ads", desc: "YouTube channel growth, video SEO, ad campaigns, and audience targeting.", icon: "📧" },
+  { title: "AI Content Creation & Prompt Engineering", desc: "Using AI tools for content writing, marketing strategy, ad copy, and automation workflows", icon: "📈" },
+  { title: "Graphic Design for Marketing", desc: "Social media creatives, ad banners, thumbnails, and branding basics using modern tools", icon: "🚀" },
+  { title: "Website Development & Landing Pages", desc: "Build professional websites and high-converting landing pages without coding", icon: "✨" },
+  { title: "Sales Funnels & Marketing Automation", desc: "Lead generation funnels, CRM automation, chatbot flows, and conversion optimization", icon: "📧" },
+  { title: "Email Marketing Automation", desc: "Email campaigns, drip sequences, personalization, and customer nurturing systems", icon: "📈" },
+  { title: "Affiliate Marketing", desc: "Learn how to promote products, generate commissions, and build passive income systems", icon: "🚀" },
+  { title: "E-commerce, Dropshipping & Analytics", desc: "Online store marketing, product ads strategy, tracking, analytics, and campaign optimization", icon: "✨" },
+
 ];
 
 const CourseModules = () => (

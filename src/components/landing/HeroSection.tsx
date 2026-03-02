@@ -3,7 +3,7 @@ import LeadForm from "./LeadForm";
 
 const benefits = [
   "3500+ Students",
-  "95% Placement Assistance",
+  "95% Placement Records",
   "Average Package ₹6-20 LPA",
   "2026 Updated Curriculum",
   "30+ AI Tools",
