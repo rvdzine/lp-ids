@@ -2,9 +2,21 @@ import { useState, useEffect } from "react";
 
 const getNextBatchDate = () => {
   const now = new Date();
-  // Add 7 days (1 week) to current date
-  const next = new Date(now.getTime() + 7 * 24 * 60 * 60 * 1000);
-  return next;
+  
+  // Set the next official batch start date (example: March 7, 2026)
+  // Update this date when you want to change the batch start date
+  const nextBatchDate = new Date('2026-03-07T00:00:00');
+  
+  // If current date is past the batch date, add 7 days to the batch date
+  if (now >= nextBatchDate) {
+    // Calculate how many weeks have passed since the batch date
+    const weeksPassed = Math.ceil((now.getTime() - nextBatchDate.getTime()) / (7 * 24 * 60 * 60 * 1000));
+    // Add that many weeks to get the next batch date
+    const updatedBatchDate = new Date(nextBatchDate.getTime() + (weeksPassed * 7 * 24 * 60 * 60 * 1000));
+    return updatedBatchDate;
+  }
+  
+  return nextBatchDate;
 };
 
 const UrgencyBanner = () => {
@@ -14,7 +26,11 @@ const UrgencyBanner = () => {
   useEffect(() => {
     const tick = () => {
       const diff = batchDate.getTime() - Date.now();
-      if (diff <= 0) return;
+      if (diff <= 0) {
+        // When countdown reaches zero, reload to get next batch date
+        window.location.reload();
+        return;
+      }
       setTimeLeft({
         days: Math.floor(diff / 86400000),
         hours: Math.floor((diff % 86400000) / 3600000),
@@ -25,7 +41,7 @@ const UrgencyBanner = () => {
     tick();
     const id = setInterval(tick, 1000);
     return () => clearInterval(id);
-  }, []);
+  }, [batchDate]);
 
   const batchStr = batchDate.toLocaleDateString("en-IN", { day: "numeric", month: "long", year: "numeric" });
 

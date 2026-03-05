@@ -52,7 +52,7 @@ const HeroSection = () => {
               ))}
             </ul>
 
-            <div className="flex flex-wrap gap-4">
+            {/* <div className="flex flex-wrap gap-4">
               <a
                 href="#hero"
                 onClick={(e) => {
@@ -67,9 +67,9 @@ const HeroSection = () => {
                 }}
                 className="inline-flex items-center rounded-lg bg-cta-gradient px-8 py-4 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-105 active:scale-95 lg:hidden"
               >
-                Book Free Career Counseling →
+                Book Free Career Counselisssssssssng →
               </a>
-              {/* <a
+              <a
                 href="https://wa.me/919315471293?text=Hi%2C%20I%20want%20course%20details"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -85,8 +85,8 @@ const HeroSection = () => {
                   <path d="M12 0C5.373 0 0 5.373 0 12c0 2.625.846 5.059 2.284 7.034L.789 23.492a.5.5 0 00.611.611l4.458-1.495A11.943 11.943 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-2.4 0-4.636-.812-6.424-2.18l-.148-.117-3.079 1.033 1.033-3.079-.117-.148A9.935 9.935 0 012 12C2 6.486 6.486 2 12 2s10 4.486 10 10-4.486 10-10 10z"/>
                 </svg>
                 Chat on WhatsApp
-              </a> */}
-            </div>
+              </a>
+            </div> */}
 
             {/* Mobile Stats */}
             <div className="mt-8 grid grid-cols-2 gap-4 lg:hidden">
