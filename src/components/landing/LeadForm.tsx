@@ -1,21 +1,14 @@
 import { useState } from "react";
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-} from "@/components/ui/dialog";
+import { useNavigate } from "react-router-dom";
 
 const LeadForm = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     full_name: "",
     email: "",
     phone: "",
     city: "",
   });
-  const [submitted, setSubmitted] = useState(false);
-  const [showMobilePopup, setShowMobilePopup] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
 
@@ -45,14 +38,8 @@ const LeadForm = () => {
           });
         }
 
-        // Check if mobile view (screen width < 768px)
-        const isMobile = window.innerWidth < 768;
-        
-        if (isMobile) {
-          setShowMobilePopup(true);
-        } else {
-          setSubmitted(true);
-        }
+        // Navigate to thank you page
+        navigate("/thankyou-page");
       } else {
         // Handle error from backend
         setError(data.error || "Something went wrong. Please try again.");
@@ -65,78 +52,11 @@ const LeadForm = () => {
     }
   };
 
-  const handleClosePopup = () => {
-    setShowMobilePopup(false);
-    setSubmitted(true);
-  };
-
-  if (submitted) {
-    return (
-      <div className="rounded-xl bg-card p-8 text-center shadow-lg">
-        <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-cta-green/10">
-          <svg 
-            className="h-8 w-8 text-cta-green" 
-            fill="none" 
-            viewBox="0 0 24 24" 
-            stroke="currentColor"
-          >
-            <path 
-              strokeLinecap="round" 
-              strokeLinejoin="round" 
-              strokeWidth={2} 
-              d="M5 13l4 4L19 7" 
-            />
-          </svg>
-        </div>
-        <h3 className="mb-2 font-display text-xl font-bold text-foreground">
-          Thank You! 🎉
-        </h3>
-        <p className="text-muted-foreground">
-          Our counselor will contact you within 24 hours.
-        </p>
-      </div>
-    );
-  }
-
   return (
-    <>
-      {/* Mobile Success Popup */}
-      <Dialog open={showMobilePopup} onOpenChange={setShowMobilePopup}>
-        <DialogContent className="sm:max-w-md">
-          <DialogHeader>
-            <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-cta-green/10">
-              <svg 
-                className="h-8 w-8 text-cta-green" 
-                fill="none" 
-                viewBox="0 0 24 24" 
-                stroke="currentColor"
-              >
-                <path 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round" 
-                  strokeWidth={2} 
-                  d="M5 13l4 4L19 7" 
-                />
-              </svg>
-            </div>
-            <DialogTitle className="text-center text-xl">Thank You! 🎉</DialogTitle>
-            <DialogDescription className="text-center">
-              Our counselor will contact you within 24 hours.
-            </DialogDescription>
-          </DialogHeader>
-          <button
-            onClick={handleClosePopup}
-            className="w-full rounded-lg bg-cta-gradient py-3 font-display text-base font-bold text-cta-foreground shadow-cta transition-all hover:scale-[1.02] active:scale-[0.98]"
-          >
-            Got it!
-          </button>
-        </DialogContent>
-      </Dialog>
-
-      <form 
-        onSubmit={handleSubmit} 
-        className="relative z-20 rounded-xl bg-card p-6 shadow-lg md:p-8"
-      >
+    <form 
+      onSubmit={handleSubmit} 
+      className="relative z-20 rounded-xl bg-card p-6 shadow-lg md:p-8"
+    >
       <div className="mb-4 text-center">
         <h3 className="font-display text-xl font-bold text-foreground">
           Book Free Career Counseling
@@ -212,8 +132,7 @@ const LeadForm = () => {
       <p className="mt-3 text-center text-xs text-muted-foreground">
         🔒 Your information is 100% secure. No spam.
       </p>
-      </form>
-    </>
+    </form>
   );
 };
 
